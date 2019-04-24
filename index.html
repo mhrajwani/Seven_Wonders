@@ -1,71 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>Seven Wonders</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Seven Wonders</title>
 </head>
+
 <body>
   <h1>Seven Innovative Landmarks</h1>
-    <div class="tab">
-      <button class="tablinks" autofocus onclick="openWonder(event, '1')" id="defaultOpen">Golden Gate</button>
-      <button class="tablinks" onclick="openWonder(event, '2')">British channel</button>
-      <button class="tablinks" onclick="openWonder(event, '3')">CN Tower</button>
-      <button class="tablinks" onclick="openWonder(event, '4')">Empire Building</button>
-      <button class="tablinks" onclick="openWonder(event, '5')">Panama Canal</button>
-      <button class="tablinks" onclick="openWonder(event, '6')">Itaipu Dam</button>
-      <button class="tablinks" onclick="openWonder(event, '7')">North Sea</button>
-    </div>
-    
-    <div id="1" class="tabcontent">
-      <video width="100%" autoplay loop muted class="myvideo">
-          <source src="assets/1w.mp4" type="video/mp4" />
-        </video>
-    </div>
-    
-    <div id="2" class="tabcontent" style="display:none">
-        <video width="100%" autoplay loop muted class="myvideo">
-            <source src="assets/2.mp4" type="video/mp4" />
-          </video>
-    </div>
-    
-    
-    <div id="3" class="tabcontent" style="display:none">
-        <video width="100%" autoplay loop muted class="myvideo">
-            <source src="assets/3.mp4" type="video/mp4" />
-          </video>
-    </div>
+  <div class="tab">
+    <button class="tablinks" autofocus onclick="openWonder(event, '1')" id="defaultOpen">Golden Gate</button>
+    <button class="tablinks" onclick="openWonder(event, '2')">British channel</button>
+    <button class="tablinks" onclick="openWonder(event, '3')">CN Tower</button>
+    <button class="tablinks" onclick="openWonder(event, '4')">Empire Building</button>
+    <button class="tablinks" onclick="openWonder(event, '5')">Panama Canal</button>
+    <button class="tablinks" onclick="openWonder(event, '6')">Itaipu Dam</button>
+    <button class="tablinks" onclick="openWonder(event, '7')">North Sea</button>
+  </div>
 
-    <div id="4" class="tabcontent" style="display:none">
-        <video width="100%" autoplay loop muted class="myvideo">
-            <source src="assets/4.mp4" type="video/mp4" />
-          </video>
-    </div>
+  <div id="1" class="tabcontent">
 
-    <div id="5" class="tabcontent" style="display:none">
-        <video width="100%" autoplay loop muted class="myvideo">
-            <source src="assets/5.mp4" type="video/mp4" />
-          </video>
+    <video width="100%" autoplay loop muted class="myvideo">
+      <source src="assets/1w.mp4" type="video/mp4" />
+    </video>
+    <div class="out">
+      <div class="details">The Golden Gate Bridge is a suspension bridge spanning the Golden Gate,
+        the one-mile-wide strait connecting San Francisco Bay and the Pacific Ocean
+      </div>
     </div>
+  </div>
 
-    <div id="6" class="tabcontent" style="display:none">
-        <video width="100%" autoplay loop muted class="myvideo">
-            <source src="assets/6.mp4" type="video/mp4" />
-          </video>
+  <div id="2" class="tabcontent" style="display:none">
+    <video width="100%" autoplay loop muted class="myvideo">
+      <source src="assets/2.mp4" type="video/mp4" />
+    </video>
+    <div class="out">
+      <div class="details">The Channel Tunnel is a 50.45-kilometre rail tunnel linking England with Coquelles France.
+      </div>
     </div>
+  </div>
 
-    <div id="7" class="tabcontent" style="display:none">
-        <video width="100%" autoplay loop muted class="myvideo">
-            <source src="assets/7.mp4" type="video/mp4" />
-          </video>
+
+  <div id="3" class="tabcontent" style="display:none">
+    <video width="100%" autoplay loop muted class="myvideo">
+      <source src="assets/3.mp4" type="video/mp4" />
+    </video>
+    <div class="out">
+      <div class="details">The CN Tower is a 553.3 m-high concrete communications and observation tower located in
+        Downtown Toronto, Ontario, Canada
+      </div>
     </div>
-    
+  </div>
 
-    
+  <div id="4" class="tabcontent" style="display:none">
+    <video width="100%" autoplay loop muted class="myvideo">
+      <source src="assets/4.mp4" type="video/mp4" />
+    </video>
+    <div class="out">
+      <div class="details">The Empire State Building is a 102-story Art Deco skyscraper in Midtown Manhattan, New York
+        City.
+      </div>
+    </div>
+  </div>
+
+  <div id="5" class="tabcontent" style="display:none">
+    <video width="100%" autoplay loop muted class="myvideo">
+      <source src="assets/5.mp4" type="video/mp4" />
+    </video>
+    <div class="out">
+      <div class="details">The Panama Canal is an artificial 82 km waterway in Panama that connects the Atlantic Ocean
+        with the Pacific Ocean.
+      </div>
+    </div>
+  </div>
+
+  <div id="6" class="tabcontent" style="display:none">
+    <video width="100%" autoplay loop muted class="myvideo">
+      <source src="assets/6.mp4" type="video/mp4" />
+    </video>
+    <div class="out">
+      <div class="details">The Itaipu Dam is a huge hydroelectric dam on the Paraná River between Brazil and Paraguay.
+        It’s known for its nighttime light shows and views from the central lookout.
+      </div>
+    </div>
+  </div>
+
+  <div id="7" class="tabcontent" style="display:none">
+    <video width="100%" autoplay loop muted class="myvideo">
+      <source src="assets/7.mp4" type="video/mp4" />
+    </video>
+    <div class="out">
+      <div class="details">North Sea Protection Works is vast and complex system of dams, floodgates, storm surge
+        barriers and other engineered works which literally allows the Netherlands to exist
+      </div>
+    </div>
+  </div>
+
 </body>
 <script src="assets/javascript.js"></script>
+
 </html>

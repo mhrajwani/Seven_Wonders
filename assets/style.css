@@ -1,0 +1,61 @@
+body, html{
+    margin:0;
+    padding:0;
+    font-family: 'Dancing Script', cursive;
+  }
+
+.myvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -999;
+  }
+
+h1{
+    text-align: center;
+    color: whitesmoke;
+}
+div.tab {
+    
+    background-color: #000000;
+}
+
+
+div.tab button {
+    font-family: 'Kalam', cursive;
+    background-color: inherit;
+    color: white;
+    padding: 15px 5px;
+    width: 13%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color:lightcoral;
+}
+
+/* Create an active/current "tab button" class */
+div.tab button:focus{
+    background-color:lightblue;
+}
+
+.tabcontent{
+    vertical-align: top;
+}
+@media only screen and (max-width: 800px) {
+    h1{
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+
+    .myvideo {
+        position: relative;
+      }
+  }

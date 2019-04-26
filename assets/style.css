@@ -55,6 +55,19 @@ div.tab button:focus{
 .tabcontent{
     vertical-align: top;
 }
+
+.footer{
+    width: 25%;
+    margin: 5px auto;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid black;
+    background: #f5f5f0;
+    padding: 1px;
+    text-shadow: 1px 1px grey;
+    position: fixed;
+    bottom: 0;
+}
 @media only screen and (max-width: 800px) {
     h1{
         text-align: center;
